@@ -1,0 +1,12 @@
+<DOCTYPE html>
+<body>
+<h2> Hi{{ name1 }}</h2>
+<h2> {{ name2 }} says: {{ name3 }}</h2>
+<h2>{{ name5}} says: {% for a in name4  %}
+ {{ a }}{% endfor %}
+</h2>
+{% for post in posts %}
+<h2>{{ post.author.username }} says: {{post.body}}</h2>
+{% endfor %}
+</body>
+</html>
